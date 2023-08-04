@@ -148,3 +148,8 @@ const currentTime09 = 9;
 
 console.log(restaurant.get(currentTime22 > restaurant.get('open') && currentTime22 < restaurant.get('close')));
 console.log(restaurant.get(currentTime09 > restaurant.get('open') && currentTime09 < restaurant.get('close')));
+
+console.log(restaurant.size);
+restaurant.delete(2);
+console.log(restaurant.size);
+console.log(restaurant);
