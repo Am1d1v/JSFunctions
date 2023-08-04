@@ -76,3 +76,9 @@ console.log(airlineTwo);
 
 const bookedAirline3 = book.bind(airlineThree);
 bookedAirline3(345, 'Name2 Surname2');
+
+const bookedAirline3Flight1 = book.bind(airlineThree, 111);
+bookedAirline3Flight1('Name4 Surname4');
+bookedAirline3Flight1('Name5 Surname5');
+
+console.log(airlineThree);
