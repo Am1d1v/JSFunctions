@@ -153,3 +153,8 @@ console.log(restaurant.size);
 restaurant.delete(2);
 console.log(restaurant.size);
 console.log(restaurant);
+
+const arr = [1, 2, 3];
+
+restaurant.set( arr, 'Some Restaurant Data');
+console.log(restaurant.get(arr));
