@@ -134,7 +134,11 @@ restaurant
     'Fruits'
     ])
     .set('open', 10)
-    .set('close', 23);
+    .set('close', 23)
+    .set(true, 'Restaurant is open')
+    .set(false, 'Restaurant is closed');
+
+console.log(restaurant.get('name'));    
 
 console.log(restaurant);
 
