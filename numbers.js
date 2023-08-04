@@ -93,6 +93,4 @@ airlineOne.purchaseAirplane = function(){
 }
 
 const purchaseBtn = document.querySelector('#purchasePlane');
-purchaseBtn.addEventListener('click', () => {
-    airlineOne.purchaseAirplane();
-});
+purchaseBtn.addEventListener('click', airlineOne.purchaseAirplane.bind(airlineOne));
