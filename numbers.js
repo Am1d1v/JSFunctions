@@ -45,7 +45,7 @@ const book = function(flightNumber, passangerName){
 
 
 const airlineOne = {
-    name: 'SkyAirLine',
+    name: 'SkyAirLineOne',
     airlineCode: 'CodeAirlineOne',
     bookings: [],
 
@@ -59,10 +59,20 @@ const airlineOne = {
 }
 
 const airlineTwo = {
-    name: 'SkyAirLine',
+    name: 'SkyAirLineTwo',
     airlineCode: 'CodeAirlineTwo',
     bookings: [],
 }
 
+const airlineThree = {
+    name: 'SkyAirLineThree',
+    airlineCode: 'CodeAirlineThree',
+    bookings: [],
+}
+
 const bookedAirline2 = book.bind(airlineTwo);
-bookedAirline2(456, 'Name1 Surname1');
+bookedAirline2(256, 'Name1 Surname1');
+console.log(airlineTwo);
+
+const bookedAirline3 = book.bind(airlineThree);
+bookedAirline3(345, 'Name2 Surname2');
