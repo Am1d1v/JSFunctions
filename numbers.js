@@ -124,5 +124,18 @@ const runOneTime = function(){
 
 const restaurant = new Map();
 restaurant.set('name', "SuperSushi");
+restaurant.set(1, 'London, England');
+restaurant.set(2, 'Berlin, Germany');
+
+restaurant
+    .set('foodCategories', [
+    'Japanese Food',
+    'Street Food',
+    'Fruits'
+    ])
+    .set('open', 10)
+    .set('close', 23);
 
 console.log(restaurant);
+
+
