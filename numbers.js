@@ -37,6 +37,8 @@ console.log(`Airline Two Bookings` + JSON.stringify(airlineTwo.bookings));
 
 */
 
+/*
+
 const book = function(flightNumber, passangerName){
     console.log(`${passangerName} has booked a ticket on ${this.name} flight ${flightNumber}`);
 
@@ -94,3 +96,33 @@ airlineOne.purchaseAirplane = function(){
 
 const purchaseBtn = document.querySelector('#purchasePlane');
 purchaseBtn.addEventListener('click', airlineOne.purchaseAirplane.bind(airlineOne));
+
+*/
+
+//   IIFE
+
+/*
+
+const runOneTime = function(){
+    console.log('Launched One Time');
+}
+
+*/
+
+//runOneTime();
+
+/*
+
+(function(){
+    console.log('Launched One Time');
+})();
+
+(() => console.log('Arrow Function Run One Time'))();
+
+*/
+
+
+const restaurant = new Map();
+restaurant.set('name', "SuperSushi");
+
+console.log(restaurant);
