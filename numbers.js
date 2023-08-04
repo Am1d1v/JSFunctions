@@ -82,3 +82,17 @@ bookedAirline3Flight1('Name4 Surname4');
 bookedAirline3Flight1('Name5 Surname5');
 
 console.log(airlineThree);
+
+
+// Bind with eventListeners
+
+airlineOne.airPlanes = 200;
+airlineOne.purchaseAirplane = function(){
+    this.airPlanes++;
+    console.log(`We now have ${this.airPlanes} planes`);
+}
+
+const purchaseBtn = document.querySelector('#purchasePlane');
+purchaseBtn.addEventListener('click', () => {
+    airlineOne.purchaseAirplane();
+});
