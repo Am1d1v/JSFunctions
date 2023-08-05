@@ -122,6 +122,8 @@ const runOneTime = function(){
 */
 
 
+/*
+
 const restaurant = new Map();
 restaurant.set('name', "SuperSushi");
 restaurant.set(1, 'London, England');
@@ -158,3 +160,37 @@ const arr = [1, 2, 3];
 
 restaurant.set( arr, 'Some Restaurant Data');
 console.log(restaurant.get(arr));
+
+*/
+
+const question = new Map([
+    ['question', 'What is your name ?'],
+    [1, 'Name1'],
+    [2, 'Name2'],
+    [3, 'Name3'],
+    ['correctAnswer', 1],
+    [true, 'Correct Answer'],
+    [false, 'Incorrect Answer']
+]);
+
+/*
+
+for (const item of question){
+    console.log(item);
+}
+
+*/
+
+for (const [key, value] of question){
+    console.log(key, value);
+}
+
+
+
+
+
+
+
+
+
+
