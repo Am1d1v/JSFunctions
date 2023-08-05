@@ -182,7 +182,9 @@ for (const item of question){
 */
 
 for (const [key, value] of question){
-    console.log(key, value);
+    if (typeof key === 'number'){
+        console.log(key, value);
+    }
 }
 
 
